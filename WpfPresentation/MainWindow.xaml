@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfPresentation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPresentation"
+        mc:Ignorable="d"
+        Title="Concesionarios" Height="350" Width="525" Icon="car.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="334*"/>
+            <ColumnDefinition Width="183*"/>
+        </Grid.ColumnDefinitions>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="517" Grid.ColumnSpan="2">
+            <MenuItem Header="_Clientes">
+                <MenuItem Header="_Alta" Click="MenuItem_Click" />
+                <MenuItem Header="_Baja" />
+                <MenuItem Header="Actualizar _teléfono" />
+                <MenuItem Header="Añadir _presupuesto a cliente" />
+                <Separator />
+                    <MenuItem Header="_Listado" Click="MenuItem_Click_1" />
+            </MenuItem>
+            <MenuItem Header="_Vehiculos">
+                <MenuItem Header="_Alta" Click="MenuItem_Click_2" />
+                <MenuItem Header="_Baja" />
+                <MenuItem Header="Añadir _presupuesto a vehiculo" />
+                <Separator />
+                <MenuItem Header="_Listado" Click="MenuItem_Click_3" />
+            </MenuItem>
+            <MenuItem Header="_Presupuestos">
+                <MenuItem Header="_Alta" />
+                <MenuItem Header="_Baja" />
+                <Separator />
+                <MenuItem Header="_Listado" />
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
